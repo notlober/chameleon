@@ -1,0 +1,31 @@
+# FilePath: project/chameleon/configs/config.yaml
+
+# Model parameters
+vocab_size: 102000
+n_layers: 6
+n_heads: 8
+dim: 64
+max_seq_len: 32 
+eps: 1.0e-5
+dropout: 0.1
+swin_norm: false
+qk_norm: true 
+qk_norm_eps: 1.0e-5
+
+# Run parameters
+backend: "CPU"
+out_dir: "output"
+data_file: "train.bin"
+batch_size: 1
+sequence_length: 32
+num_steps: 5
+checkpoint_steps: 5
+learning_rate: 1.0e-4
+warmup_steps: 40
+lr_decay: 0.999
+weight_decay: 0.1
+gradient_clip_val: 1.0
+checkpoint_path: null
+seed: 42
+
+# Optional Cerebras System configuration
