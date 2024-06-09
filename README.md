@@ -40,3 +40,16 @@ Step=4, Loss=8.97504
 INFO:train.py:
 Step=5, Loss=7.32438
 ```
+
+file descriptions:
+
+check_coco_data.py : checks train.bin file to see if tokens are valid logically.
+config.yaml : config of whole setup and model.
+configuration.py : used for parsing arguments.
+convert_image_tokens.py : a test script to test image tokenizer on test_image.jpeg
+data.py : for data loading in train.py.
+eval.py : for evaluation with a model checkpoint.
+model.py : model file and code.
+prepare_mini_coco.py : prepares a subset of mscoco dataset for training, saves to train.bin file as tokenized.
+sample.py : for testing model with real inputs.
+train.py : main training script, using shifted tokens for autoregressive training.
